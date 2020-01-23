@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                withMaven(maven: 'M3.5.3') {
+                withMaven(maven: 'M3') {
                     sh 'mvn clean package'
                 }
             }
