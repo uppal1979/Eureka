@@ -11,7 +11,7 @@ pipeline {
 
         }
 
-        stage ('Deploy') {
+        stage ('Deploy to environment using manifest') {
             steps {
 
                
