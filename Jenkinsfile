@@ -6,7 +6,7 @@ pipeline {
             steps {
                 withMaven(maven: 'maven_3_6_2') {
             
-                    bat 'mvn clean package'
+                    sh 'mvn clean package'
                 }
             }
 
