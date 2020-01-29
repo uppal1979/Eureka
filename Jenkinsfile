@@ -17,7 +17,7 @@ pipeline {
 
                
                     sh '/usr/local/bin/cf login -a https://api.sys.dev.pcf-aws.com -u rajiv.uppal@wipro.com -p changeme '
-                    sh '/usr/local/bin/cf push -f manifest'
+                    sh '/usr/local/bin/cf blue-green-deploy -f manifest'
                 
             }
 
